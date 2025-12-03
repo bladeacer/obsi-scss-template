@@ -1,0 +1,26 @@
+{
+  "name": "obsi-scss-template",
+  "version": "1.0.0",
+  "description": "The missing Obsidian SCSS theme template.",
+  "homepage": "https://github.com/bladeacer/obsi-scss-template#readme",
+  "bugs": {
+    "url": "https://github.com/bladeacer/obsi-scss-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bladeacer/obsi-scss-template.git"
+  },
+  "license": "Unlicense",
+  "author": "bladeacer",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint '**/*.css'",
+    "fix": "stylelint '**/*.css' --fix"
+  },
+  "devDependencies": {
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-scss": "^6.12.1"
+  }
+}
