@@ -23,12 +23,12 @@ https://github.com/dbarenholz/halcyon-obsidian/blob/main/package.json
 Stylelint > PostCSS > Prettier.
 > Functionality over form/aesthetics
 
+You can have both functionality and aesthetics with `stylelint-prettier`, however.
+
 PostCSS mentioned?
 > Too opinionated/niche tho
 
 Include stylelint no-unsupported-browser-feature plugin
-
-As much as everyone hates the no-descending-specificity rule, imo it forces you to merge or nest same or higher specificity code.
 
 Both are not really used too often.
 
@@ -76,16 +76,5 @@ Generally no contributing or code-of-conduct related markdown files.
 Core slides plugin other niceties with CSS variables I guess
 
 ___
-### Credits
-Primary
-Fancy-a-Story
-Maple
-Minimal
-ITS
-Halcyon
-https://github.com/obsidian-community/obsidian-theme-template
-https://github.com/obsidianmd/obsidian-sample-theme
-...probably missed a few others
-
 
 Employ sane defaults, let users use plop.js for templating initial setup (set default values).

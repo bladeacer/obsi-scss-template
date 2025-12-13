@@ -15,12 +15,19 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "lint": "stylelint '**/*.css'",
-    "fix": "stylelint '**/*.css' --fix"
+    "lint-once": "stylelint '**/*.scss'",
+    "fix": "stylelint '**/*.scss' --fix",
+    "lint": "onchange '**/*.scss' -- npm run lint-once",
+    "dev": "sass --watch --no-source-map scss/theme.scss theme.css",
+    "compile-once": "sass --no-source-map scss/theme.scss theme.css"
   },
   "devDependencies": {
+    "onchange": "^7.1.0",
+    "prettier": "^3.7.4",
     "stylelint": "^16.26.1",
     "stylelint-config-standard-scss": "^16.0.0",
-    "stylelint-scss": "^6.12.1"
+    "stylelint-no-unsupported-browser-features": "^8.0.5",
+    "stylelint-prettier": "^5.0.3",
+    "stylelint-use-logical": "^2.1.2"
   }
 }
