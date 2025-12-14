@@ -50,8 +50,7 @@ your file changes are saved.
 TBC.
 
 ## Status
-WIP. See [planning](./planning.md) on planned features and findings on
-the theming ecosystem.
+WIP.
 
 ## License
 
@@ -73,4 +72,3 @@ Unlicense license that you can find [here](./LICENSE).
 - [Obsidian Theme Template](https://github.com/obsidian-community/obsidian-theme-template)
 - [Obsidian Sample Theme](https://github.com/obsidianmd/obsidian-sample-theme)
 - ...probably missed a few others
-
