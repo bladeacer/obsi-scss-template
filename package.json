@@ -19,7 +19,8 @@
     "fix": "stylelint '**/*.scss' --fix",
     "lint": "onchange '**/*.scss' -- npm run lint-once",
     "dev": "sass --watch --no-source-map scss/theme.scss theme.css",
-    "compile-once": "sass --no-source-map scss/theme.scss theme.css"
+    "compile-once": "sass --no-source-map scss/theme.scss theme.css",
+    "compile-min": "sass --no-source-map --style=compressed scss/theme.scss theme.min.css"
   },
   "devDependencies": {
     "onchange": "^7.1.0",
