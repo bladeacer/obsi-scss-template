@@ -15,20 +15,25 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "lint-once": "stylelint '**/*.scss'",
-    "fix": "stylelint '**/*.scss' --fix",
-    "lint": "onchange '**/*.scss' -- npm run lint-once",
+    "lint": "onchange 'scss/**/*.scss' -- node scripts/lint.mjs {{changed}}",
+    "lint-once": "node scripts/lint.mjs",
+    "fix": "node scripts/lint.mjs --fix",
     "dev": "sass --watch --no-source-map scss/theme.scss theme.css",
     "compile-once": "sass --no-source-map scss/theme.scss theme.css",
-    "compile-min": "sass --no-source-map --style=compressed scss/theme.scss theme.min.css"
+    "pre-push": "node scripts/lint.mjs --fix && $npm_execpath run compile-once"
   },
   "devDependencies": {
     "onchange": "^7.1.0",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.3",
     "stylelint": "^16.26.1",
+    "stylelint-config-recess-order": "^7.7.0",
     "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-high-performance-animation": "^2.0.0",
+    "stylelint-no-indistinguishable-colors": "^2.3.1",
     "stylelint-no-unsupported-browser-features": "^8.0.5",
+    "stylelint-order": "^8.1.1",
+    "stylelint-plugin-defensive-css": "^2.9.3",
     "stylelint-prettier": "^5.0.3",
-    "stylelint-use-logical": "^2.1.2"
+    "stylelint-use-logical": "^2.1.3"
   }
 }
