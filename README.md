@@ -46,8 +46,24 @@ write is detected in source files
 - `npm run fix`: Equivalent to running `stylelint --fix`. Run this only after
 your file changes are saved.
 
-## Questions
-TBC.
+You can alternatively use `pnpm`, `yarn`, `deno` or `bun`.
+
+## FAQ
+### Does this configuration have proven real world usage?
+
+I do use this exact configuration in my theme  [flexcyon](https://github.com/bladeacer/flexcyon).
+
+It is sitting at around 17 000 lines of output theme.css (with heavy `.scss` usage)
+
+- So yes, it does work at scale
+
+### How often is this updated?
+
+Not often, stylelint is one of those "set and forget" tools.
+
+### How opinionated is this configuration?
+
+Somewhat opinionated, though mostly sane defaults are provided.
 
 ## Status
 WIP.
